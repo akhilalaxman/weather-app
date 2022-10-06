@@ -41,7 +41,8 @@ function CurrentWeather() {
                 }
               />
               <div
-                className="absolute p-10 right-0 bg-white w-1/2"
+                className="sm:absolute p-10 sm:right-0 bg-white sm:w-1/2 xs:w-full"
+                
                 style={{ top: "5%" }}
               >
                 <Typography
@@ -91,7 +92,7 @@ function CurrentWeather() {
         </div>
       )}
       <div className="w-full h-full ">
-        <div className="absolute p-5 top-0 bg-white w-1/4 ml-10 mt-24">
+        <div className="sm:absolute sm:p-5 sm:top-0 bg-white sm:w-1/4 xs:w-full sm:ml-10  sm:mt-24">
           {!_.isEmpty(data) && (
             <ForecastWeather data={data && data.forecast.forecastday} />
           )}

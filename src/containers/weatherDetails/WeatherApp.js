@@ -50,7 +50,7 @@ export const WeatherApp = () => {
         <h3 className="text-2xl text-center">
           Select country / city to know the weather details !
         </h3>
-        <div className="mt-10 mb-10 flex justify-center">
+        <div className="mt-10 mb-10 sm:flex sm:justify-center">
           <Box sx={{ minWidth: 300 }}>
             <FormControl fullWidth>
               <InputLabel>Country</InputLabel>

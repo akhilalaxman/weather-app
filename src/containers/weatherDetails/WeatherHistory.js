@@ -28,7 +28,7 @@ export const WeatherHistory = () => {
       </Header>
       <div className="container mx-auto">
         {!_.isEmpty(data) && (
-          <div className="w-1/2 h-4/6 mt-20">
+          <div className="sm:w-1/2 xs:w-full sm:h-4/6 mt-20">
             <Card className="h-4/6">
               <CardContent className="">
                 <div className=" bg-white ">
