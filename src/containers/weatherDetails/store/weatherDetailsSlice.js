@@ -7,7 +7,7 @@ import _ from "lodash";
 export const getCurrentWeatherDetails = () => async (dispatch) => {
   dispatch(setLoading(true));
   const response = await axios.get(
-    `http://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_API_KEY}&q=Lisbon&days=7`
+    `https://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_API_KEY}&q=Lisbon&days=7`
   );
   response && dispatch(setLoading(false));
   return response.status
